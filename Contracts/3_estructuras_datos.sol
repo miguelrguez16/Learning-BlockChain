@@ -23,7 +23,7 @@ contract data_structures {
 
     Customer[] public array_clients;
 
-    function add_client(
+    function array_modification(
         uint256 _id,
         string memory _name,
         string memory _email
@@ -39,15 +39,15 @@ contract data_structures {
      */
 
     // como una wallet
-    mapping(address => uint256) public address_amount;
+    mapping(address => uint256) public address_uint;
     //una wallet con multiples cantidades
     mapping(string => uint256[]) public string_list_amount;
     // relacionamos los datos de una person con sus datos
-    mapping(address => Customer) public address_customer;
+    mapping(address => Customer) public address_dataStructure;
 
     // asingar un numero a una direccion
-    function assingAmountToAddress(uint256 _amount) public {
-        address_amount[msg.sender] = _amount;
+    function assingNumber(uint256 _amount) public {
+        address_uint[msg.sender] = _amount;
     }
 
     // asingar un numero a una direccion
@@ -61,6 +61,6 @@ contract data_structures {
         string memory _name,
         string memory _email
     ) public {
-        address_customer[msg.sender] = Customer(_id, _name, _email);
+        address_dataStructure[msg.sender] = Customer(_id, _name, _email);
     }
 }

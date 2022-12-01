@@ -11,7 +11,11 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tener
 - [Solidity CheatSheet](https://github.com/manojpramesh/solidity-cheatsheet)
 - [Bool: Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)
 - [More Documentation](https://github.com/bkrem/awesome-solidity)
+- [Solidity by Example](https://solidity-by-example.org/)
 
+#### Programando
+- [Hashing](https://docs.soliditylang.org/en/v0.8.13/units-and-global-variables.html?highlight=ripemd#mathematical-and-cryptographic-functions)
+- [Send & Recept Ethe](https://docs.soliditylang.org/en/v0.8.13/security-considerations.html?#sending-and-receiving-ether)
 ### Other Resources
 -  [StackOverflow web3 -> stackexchange](https://stackexchange.com/)
 
