@@ -1,4 +1,4 @@
-**/Contracts/artifacts/*
+**/artifacts/**
 **/.deps
 *_metadata*
 *.json
