@@ -3,11 +3,9 @@ pragma solidity ^0.8.13 .0;
 
 import "ERC20/IERC20.sol";
 
-contract ERC20 is
-    IERC20 //
-{
+contract ERC20 is IERC20 {
     // Owner --> Tokens
-    mapping(address => uint256) private _balance;
+    mapping(address => uint256) private _balances;
     // Owner -> Spender --> Amount
     mapping(address => mapping(address => uint256)) private _allowances;
 
@@ -44,7 +42,7 @@ contract ERC20 is
         override
         returns (uint256)
     {
-        return _balance[account];
+        return _balances[account];
     }
 
     function transfer(address to, uint256 amount)
@@ -86,8 +84,8 @@ contract ERC20 is
         uint256 amount
     ) public virtual override returns (bool) {
         address spender = msg.sender;
-        _spendAllowance(from, spender, amount);
-        _transfer(from, to, amount);
+        _spendAllowance(from, spender, amount); // llama _approve y modifica _allowances
+        _transfer(from, to, amount); // modifica el balance de cada uno
         return true;
     }
 
@@ -121,45 +119,80 @@ contract ERC20 is
 
     // private functions
 
-    function _transfer(address from, address to, uint256 amount) internal virtual {
-        require(from != address(0), "Error: transfer from the zero adress" );
-        require(to != address(0), "Error: transfer to the zero adress" );
-        _beforeTokenTransfer(from,to, amount); // hooks
-        uint256 fromBalance = _balance[from];
+    // modifica el numero de tokens, disminuye el del from y aumenta el to
+    function _transfer(
+        address from,
+        address to,
+        uint256 amount
+    ) internal virtual {
+        require(from != address(0), "Error: transfer from the zero adress");
+        require(to != address(0), "Error: transfer to the zero adress");
+        _beforeTokenTransfer(from, to, amount); // hooks
+        uint256 fromBalance = _balances[from];
         require(fromBalance >= amount, "Error: amount exceeds current balance");
         unchecked {
-            _balance[from] = fromBalance - amount;
+            _balances[from] = fromBalance - amount;
         }
-        _balance[to] += amount;
+        _balances[to] += amount;
 
         emit Transfer(from, to, amount);
-        _afterTokenTransfer(from,to, amount); // hooks
-
+        _afterTokenTransfer(from, to, amount); // hooks
     }
+
     //create token and assing them
-    function _mint(address account, uint amount )internal virtual  {
+    function _mint(address account, uint256 amount) internal virtual {
         require(account != address(0), "Error: mint to the zero address");
-        _beforeTokenTransfer(address(0),account, amount); // hooks
-        _totalSuply +=amount;
-        _balance[account] += amount;
+        _beforeTokenTransfer(address(0), account, amount); // hooks
+        _totalSuply += amount;
+        _balances[account] += amount;
         emit Transfer(address(0), account, amount);
-        _afterTokenTransfer(address(0),account, amount); // hooks   
+        _afterTokenTransfer(address(0), account, amount); // hooks
     }
 
     //burn tokens
-    function _burn (address account, uint amount) internal virtual{
+    function _burn(address account, uint256 amount) internal virtual {
         require(account != address(0), "Error: burnt to the zero address");
         _beforeTokenTransfer(account, address(0), amount); // hooks
-        uint256 accountBalance = _balance[account];
-        require(accountBalance >= amount, "Error: burn amount exceeds current balance");
+        uint256 accountBalance = _balances[account];
+        require(
+            accountBalance >= amount,
+            "Error: burn amount exceeds current balance"
+        );
         unchecked {
-            _balance[account] = accountBalance - amount;
+            _balances[account] = accountBalance - amount;
         }
         _totalSuply -= amount;
-        emit Transfer(account ,address(0),  amount);
-        _afterTokenTransfer(account,address(0), amount); // hooks  
+        emit Transfer(account, address(0), amount);
+        _afterTokenTransfer(account, address(0), amount); // hooks
     }
 
+    function _approve(
+        address owner,
+        address spender,
+        uint256 amount
+    ) internal virtual {
+        require(owner != address(0), "Error: approve from zero address");
+        require(spender != address(0), "Error: spender has a zero address");
+        _allowances[owner][spender] = amount; // asign the amount
+        emit Approval(owner, spender, amount); // emit amount was traspased to the spender
+    }
 
-
+    // transferFrom() call it
+    function _spendAllowance(
+        address owner,
+        address spender,
+        uint256 amount
+    ) internal virtual {
+        uint256 currentAllowance = allowance(owner, spender);
+        if (currentAllowance != type(uint256).max) {
+            // si no es el maximo asignable
+            require(
+                currentAllowance >= amount,
+                "Error: insufficient allowance"
+            );
+            unchecked {
+                _approve(owner, spender, amount);
+            }
+        }
+    }
 }
