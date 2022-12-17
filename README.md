@@ -14,7 +14,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tener
 - [Solidity by Example](https://solidity-by-example.org/)
 - [¿Por qué fallback y receive?](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/)
 
-#### Programando
+####    Programando
 - [Hashing](https://docs.soliditylang.org/en/v0.8.13/units-and-global-variables.html?highlight=ripemd#mathematical-and-cryptographic-functions)
 - [Send & Recept Ethe](https://docs.soliditylang.org/en/v0.8.13/security-considerations.html?#sending-and-receiving-ether)
 ### Other Resources
