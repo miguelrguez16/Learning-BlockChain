@@ -18,6 +18,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tener
 ####    Programando
 - [Hashing](https://docs.soliditylang.org/en/v0.8.13/units-and-global-variables.html?highlight=ripemd#mathematical-and-cryptographic-functions)
 - [Send & Recept Ethe](https://docs.soliditylang.org/en/v0.8.13/security-considerations.html?#sending-and-receiving-ether)
+- [using Counters for Counters.Counter;](https://ethereum.stackexchange.com/questions/97186/what-is-the-reason-behind-writing-using-counters-for-counters-counters-when-us)
 ### Other Resources
 -  [StackOverflow web3 -> stackexchange](https://stackexchange.com/)
 ## Tech Stack
