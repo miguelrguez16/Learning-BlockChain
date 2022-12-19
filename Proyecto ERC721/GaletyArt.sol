@@ -83,4 +83,53 @@ contract ArtToken is ERC721, Ownable {
 
         return (smartContractAddress, smartContractMoney);
     }
+
+    //obtain al NFT tokems (artworks)
+    function getAllArtWorks() public view returns (Art[] memory) {
+        return artWorks;
+    }
+
+    // Get NFT of a user
+    function getOwnerArtWork(address _owner)
+        public
+        view
+        returns (Art[] memory)
+    {
+        Art[] memory ownersArtWork = new Art[](balanceOf(_owner));
+        uint256 count = 0;
+        for (uint256 i = 0; i < artWorks.length; i++) {
+            if (ownerOf(i) == _owner) {
+                ownersArtWork[count] = artWorks[i];
+                count++;
+            }
+        }
+        return ownersArtWork;
+    }
+
+    /************************************
+            NFT TOKEN DEVELOPMENT
+    ************************************/
+
+    // NFT Token payment
+    function createRandomArtWork(string memory _name) public payable {
+        require(
+            msg.value >= fee,
+            "Error: insuficient ethe to create an artwork"
+        );
+        _createArtWork(_name);
+    }
+
+    // Get Ether from the Smart Contract to the owner
+    function withdraw() external payable onlyOwner {
+        address payable _ownerToPay = payable(owner());
+        _ownerToPay.transfer(address(this).balance);
+    }
+
+    // level up NFT artWork
+    function(uint256 _idArtWok) public {
+        require(OwnerOf(_idArtWok) == msg.sender, "Error: not owner of NFT");
+        Art storage artToLevelUp = artWorks[_idArtWok];
+        artToLevelUp.level++;
+    }
+
 }
