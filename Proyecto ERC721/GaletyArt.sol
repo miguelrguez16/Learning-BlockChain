@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.13;
 
 // Imports from OpenZepellin
 import "@openzeppelin/contracts@4.4.2/token/ERC721/ERC721.sol";
@@ -18,7 +18,7 @@ contract ArtToken is ERC721, Ownable {
     uint256 COUNTER;
 
     // Price art work
-    uint256 fee = 5 ether;
+    uint256 public fee = 5 ether;
 
     // Data Structure with the properties of the artwork
     struct Art {
@@ -77,7 +77,7 @@ contract ArtToken is ERC721, Ownable {
     ************************************/
 
     // Visualize the balance of the Smart Contract
-    function infoSmartContract() public view returns (address, uint256) {
+    function infoSmartContract() external view onlyOwner returns (address, uint256)  {
         address smartContractAddress = address(this);
         uint256 smartContractMoney = address(this).balance / 10**18;
 
@@ -126,8 +126,9 @@ contract ArtToken is ERC721, Ownable {
     }
 
     // level up NFT artWork
-    function(uint256 _idArtWok) public {
+    function(uint256 _idArtWok) external payable {
         require(OwnerOf(_idArtWok) == msg.sender, "Error: not owner of NFT");
+        require(msg.value >= 1 ether, "Error: insuficient ether to level up")
         Art storage artToLevelUp = artWorks[_idArtWok];
         artToLevelUp.level++;
     }
