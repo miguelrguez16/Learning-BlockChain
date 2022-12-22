@@ -2,3 +2,8 @@
 **/.deps
 *_metadata*
 *.json
+/.idea/sonarlint/issuestore/index.pb
+/.idea/Learning-BlockChain.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
