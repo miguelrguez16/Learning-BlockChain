@@ -1,5 +1,5 @@
 
-# DeFi - Decentriled Finance
+# DeFi - Decentralized Finance
 
 Servicios Financiaeros Descentralizados que funcionana sobre la BlockChain.
 Un usuario normal, podría hacer inversiones y cualquier otro tipo de inversion de manera
