@@ -3,6 +3,7 @@ pragma solidity ^0.8.13 .0;
 
 // interfaz con las operaciones necesarios para nuestro token
 // view permite que con la herencia se pueda hacer override
+/// @author Miguel Rodriguez Gonzalez
 interface IERC20 {
 
     function totalSupply() external view returns (uint256);

@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+/// @author Miguel Rodriguez Gonzalez
 contract Funciones {
     uint256 x = 100;
 

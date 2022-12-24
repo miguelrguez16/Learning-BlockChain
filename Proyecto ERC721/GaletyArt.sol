@@ -5,6 +5,7 @@ pragma solidity ^0.8.13;
 import "@openzeppelin/contracts@4.4.2/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts@4.4.2/access/Ownable.sol";
 
+/// @author Miguel Rodriguez Gonzalez
 contract ArtToken is ERC721, Ownable {
     // Smart Contract Constructor
     constructor(string memory _name, string memory _symbol)

@@ -6,6 +6,7 @@ pragma solidity ^0.8.4;
 // Importar Smart COntract desde OpenZepellin
 import "@openzeppelin/contracts@4.6.0/token/ERC721/ERC721.sol";
 
+/// @author Miguel Rodriguez Gonzalez
 // Declaracion Smart Contract
 contract FirstContract is ERC721 {
     // Direccion Propiertario

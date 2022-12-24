@@ -6,6 +6,7 @@ import "@openzeppelin/contracts@4.8.0/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts@4.8.0/utils/Counters.sol";
 
 
+/// @author Miguel Rodriguez Gonzalez
 contract CustomNFT is ERC721{
 
     // Contadores para los IDs de los NFTs

@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13 .0;
 
+/// @author Miguel Rodriguez Gonzalez
 contract LoopsAndConditions {
     // suma de los 10 primeros nuemeros a partir de uno
     function sum(uint256 _number) public pure returns (uint256) {

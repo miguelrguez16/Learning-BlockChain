@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13 .0;
 
+/// @author Miguel Rodriguez Gonzalez
 contract EthSend {
     /**
      * Funciones payable

@@ -3,6 +3,7 @@ pragma solidity ^0.8.13 .0;
 
 import "ERC20/IERC20.sol";
 
+/// @author Miguel Rodriguez Gonzalez
 contract ERC20 is IERC20 {
     // Owner --> Tokens
     mapping(address => uint256) private _balances;

@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+/// @author Miguel Rodriguez Gonzalez
 contract variableModifiers {
     uint256 a;
     uint8 public b = 8;
