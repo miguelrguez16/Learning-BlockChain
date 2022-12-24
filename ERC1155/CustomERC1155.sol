@@ -19,8 +19,11 @@ contract CustomERC1155 is ERC1155{
         _mint(msg.sender, SILVER_POKEMON, 10**27, "");
         _mint(msg.sender, THOR_HAMMER, 1, "");
         _mint(msg.sender, SWORD, 10**9, "");
-        _mint(msg.sender, SHIELD, 10**8, "");
+        _mint(msg.sender, SHIELD, 10**8, "");   
+
+        //_mint(msg.sender, [GOLD, SHIELD], [1,2], "");  
     }
 
-
-}
+}// owner 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+ // recept 0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB
+  // operatr: 0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7
