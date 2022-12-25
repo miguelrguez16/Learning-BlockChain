@@ -26,6 +26,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tener
 
 - [StackOverflow web3 -> stackexchange](https://stackexchange.com/)
 - [RoadMap BlockChain](https://roadmap.sh/blockchain)
+- [Web3 collection Resources](https://www.web3collection.app/)
 
 ## Tech Stack
 
