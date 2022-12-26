@@ -84,6 +84,6 @@ Se permite ejecutar test en modo CI/CD
 **Pruebas despligue Smart Contracts:** Ganache
 
 **Wallet:** MetaMask
-**Entornos de desarrollo:** [![V](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-- Visual Studio Code: 
+**Entornos de desarrollo:** 
+- [![](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 - Truffle
