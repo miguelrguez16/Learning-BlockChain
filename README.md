@@ -40,6 +40,6 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
 **Entornos de desarrollo:**
 
-- !["//"](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+- ![Visual Studio Code](https://img.shields.io/static/v1?label=visualstudiocode&message=&color=2ea44f&logo=visualstudiocode)
 - ![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=2ea44f&logo=ganache)
 - ![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=2ea44f&logo=truffle)
