@@ -52,12 +52,24 @@ contract MarketPlace is ReentrancyGuard {
 
         // Save data of NFT
         items[itemCount] = Item(
-            itemCount,
-            _nft,
-            _tokendId,
-            _price,
-            payable(msg.sender),
-            false
+            itemCount,_nft, _tokendId, _price, payable(msg.sender),false
         );
+
+        emit OfferedNFT(itemCount, address(_nft), _tokendId, _price, msg.sender);
+    }
+
+    function purchaseItem(uint _itemId) external payable nonReentrant {
+        uint priceItem = getTotalPrice(_itemId);
+        require(msg.value >= priceItem, "Error: ethers not enought for purchase this item");
+        Item storage itemNFT = items[_itemId];
+        require(!itemNFT.sold , "Error: NFT is not for sale");
+        itemNFT.seller.transfer(itemNFT.price);
+        feeAccount.transfer(priceItem - itemNFT.price);
+        emit Bought(_itemId, address(itemNFT.nft), itemNFT.tokenId, itemNFT.price, itemNFT.seller, msg.sender);
+    }
+
+    function getTotalPrice(uint _itemId) public view returns (uint){
+        require(_itemId > 0 && _itemId <= itemCount, "Error: item not found");
+        return items[_itemId].price * (100 + feePercent) / 100;
     }
 }

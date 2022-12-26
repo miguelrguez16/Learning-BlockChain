@@ -28,6 +28,21 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tener
 - [RoadMap BlockChain](https://roadmap.sh/blockchain)
 - [Web3 collection Resources](https://www.web3collection.app/)
 
+### Ganache
+Ser trata de una blockChain 
+
+#### Ganache CLI
+Es la version de linea de comandos de Ganache, su blockChain personal para el desarrollo de Ethereum. 
+Ganacha CLI utiliza _ethereum.js_ para simular el comportamiento completo del cliente y hacer que el desarrollo de aplicaciones Ethereum sea más rápido, fácil, sencillo y seguro.
+
+#### Ganache GUI
+La version con interfaz gráfica
+
 ## Tech Stack
 
-**BlockChain:** Solidity (de momento...)
+**Lenguaje para Ethereum:** Solidity (de momento...)
+
+**Pruebas despligue Smart Contracts:** Ganache
+
+**Wallet:** MetaMask
+
