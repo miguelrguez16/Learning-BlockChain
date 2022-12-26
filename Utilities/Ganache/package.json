@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "ganache": "ganache -v -b -l --chain.allowUnlimitedContractSize --logging.debug  "
+    }
+} 
