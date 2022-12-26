@@ -1,6 +1,6 @@
 # Learning BlockChain, Ethereum, Solidity and more
 
-Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tenerlo siempre actualizado
+Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
 ## Documentación
 
@@ -27,63 +27,19 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo y espero tener
 - [StackOverflow web3 -> stackexchange](https://stackexchange.com/)
 - [RoadMap BlockChain](https://roadmap.sh/blockchain)
 - [Web3 collection Resources](https://www.web3collection.app/)
-
-### Ganache
-
-Ser trata de una blockChain
-
-#### Ganache CLI
-
-Es la version de linea de comandos de Ganache, su blockChain personal para el desarrollo de Ethereum.
-Ganacha CLI utiliza _ethereum.js_ para simular el comportamiento completo del cliente y hacer que el desarrollo de aplicaciones Ethereum sea más rápido, fácil, sencillo y seguro.
-
-#### Ganache GUI
-
-La version con interfaz gráfica
-
-### Truffle
-
 - [Documentacion Truffle](https://trufflesuite.com/docs/truffle/)
-
-### Comandos
-
-#### Migración
-
-Migracion -> Desplegar en una BlockChain
-
-```bash
-truffle migrate
-```
-
-#### Testing
-
-```bash
-truffle test
-```
-
-```bash
-truffle test <path_file_test>
-```
-
-Se permite ejecutar test en modo CI/CD
-
-### Beneficios del uso de Truffle
-
-1. Proporcion un enrono para el desarrollo, integracion y producción de aplicaciones (testing también)
-2. Proporicion una orma automatizada de testear Smart Contracts -> `bash truffle test`
-3. Los entornos de desarrollo, integracion y producción pueden configurarse para que puedan reutilizarse
-4. Permite a los desarrolladores codificar en idiomas que ya dominan. (js, solidity, ts)
-5. Gestión de redes para que le permite deplegar en redes públicas y privadas
+- [Documentacion Ganache](https://trufflesuite.com/docs/ganache/)
 
 ### Tech Stack
 
-**Lenguaje para Ethereum:** Solidity [![solidity - v0.8.13](https://img.shields.io/static/v1?label=solidity&message=v0.8.13&color=2ea44f&logo=solidity)](https://github.com/manifoldfinance)
+#### !["//"](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
 
-
-
-**Pruebas despligue Smart Contracts:** Ganache
+![solidity - v0.8.13](https://img.shields.io/static/v1?label=solidity&message=v0.8.13&color=2ea44f&logo=solidity)
 
 **Wallet:** MetaMask
-**Entornos de desarrollo:** 
-- [![](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-- Truffle
+
+**Entornos de desarrollo:**
+
+- !["//"](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+- ![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=2ea44f&logo=ganache)
+- ![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=2ea44f&logo=truffle)
