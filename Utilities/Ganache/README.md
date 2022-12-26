@@ -1,6 +1,4 @@
-# UTILITIES
-
-## GANACHE
+# GANACHE
 
 - [Ganache npm](https://www.npmjs.com/package/ganache)
 - [GitHub Ganache](https://github.com/trufflesuite/ganache)
@@ -18,7 +16,7 @@ De manera global:
 npm install ganache --global
 ```
 
-### Lanzar Ganache
+## Lanzar Ganache
 
 Se necesita en Windows un package.json para lanzar ganache
 
