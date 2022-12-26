@@ -77,7 +77,8 @@ Se permite ejecutar test en modo CI/CD
 
 ### Tech Stack
 
-**Lenguaje para Ethereum:** Solidity (de momento...)
+**Lenguaje para Ethereum:** Solidity [![solidity](https://img.shields.io/static/v1?label=solidity&logo=solidity)](https://github.com/manifoldfinance)
+
 
 **Pruebas despligue Smart Contracts:** Ganache
 
