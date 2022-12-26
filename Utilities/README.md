@@ -2,6 +2,10 @@
 
 ## GANACHE
 
+- [Ganache npm](https://www.npmjs.com/package/ganache)
+- [GitHub Ganache](https://github.com/trufflesuite/ganache)
+- [Readme Ganache](https://github.com/trufflesuite/ganache/tree/develop/src/packages/ganache#readme)
+
 instalar ganache:
 
 ```bash
