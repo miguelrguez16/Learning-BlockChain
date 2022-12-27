@@ -13,6 +13,13 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [¿Por qué fallback y receive?](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/)
 - [OpenZeppelin tokens ERC](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token)
 - [ERC721 Docs OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#IERC721)
+- [Página de Ethereum](https://ethereum.org/es/developers/docs/smart-contracts/languages/)
+- [bit3me academy](https://academy.bit2me.com/top-5-de-lenguajes-de-programacion-de-smart-contracts/)
+- [Mastering Ethereum]()
+- [Vyper vs Solidity](https://iglu.net/vyper-vs-solidity/)
+- [Documentación Solidity](https://docs.soliditylang.org/en/latest/)
+- [Documentación Vyper](https://vyper.readthedocs.io/en/latest/)
+- [Video diferencia coste gas lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
 
 ### _Programando_
 
@@ -36,12 +43,14 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
 !["//"](https://img.shields.io/badge/MetaMask-3C3C3D?style=for-the-badge&logo=MetaMask&logoColor=blue)
 
-### Programming Language
+### **Programming Language**
 
 ![solidity - v0.8.13](https://img.shields.io/static/v1?label=solidity&message=v0.8.13&color=5208F0&logo=solidity)
 
-**Entornos de desarrollo:**
+### **Entornos de desarrollo:**
 
-- ![Visual Studio Code - Dark Mode](https://img.shields.io/static/v1?label=Visual%20Studio%20Code&message=Dark%20Mode&color=5208F0&logo=visualstudiocode)
-- ![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=5208F0&logo=ganache)
-- ![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=5208F0&logo=truffle)
+![Visual Studio Code - Dark Mode](https://img.shields.io/static/v1?label=Visual%20Studio%20Code&message=Dark%20Mode&color=5208F0&logo=visualstudiocode)
+
+![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=5208F0&logo=ganache)
+
+![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=5208F0&logo=truffle)
