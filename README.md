@@ -15,11 +15,15 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [ERC721 Docs OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#IERC721)
 - [Página de Ethereum](https://ethereum.org/es/developers/docs/smart-contracts/languages/)
 - [bit3me academy](https://academy.bit2me.com/top-5-de-lenguajes-de-programacion-de-smart-contracts/)
-- [Mastering Ethereum]()
+- [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)
 - [Vyper vs Solidity](https://iglu.net/vyper-vs-solidity/)
 - [Documentación Solidity](https://docs.soliditylang.org/en/latest/)
 - [Documentación Vyper](https://vyper.readthedocs.io/en/latest/)
-- [Video diferencia coste gas lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
+- [GitHub Ganache](https://github.com/trufflesuite/ganache)
+- [Documentacion Truffle](https://trufflesuite.com/docs/truffle/)
+- [Documentación WEB3JS](https://web3js.readthedocs.io/en/v1.7.3/getting-started.html)
+
+- [Video del coste del gas en los diferentes lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
 
 ### _Programando_
 
@@ -54,3 +58,5 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 ![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=5208F0&logo=ganache)
 
 ![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=5208F0&logo=truffle)
+
+![Web3JS - v1.7.3](https://img.shields.io/static/v1?label=Web3JS&message=v1.7.3&color=5208F0&logo=Web3JS)
