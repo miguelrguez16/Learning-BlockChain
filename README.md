@@ -2,6 +2,8 @@
 
 Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
 ## _Solidity_
 
 - [Documentation Solidity v 0.8.17](https://docs.soliditylang.org/en/v0.8.17/)
@@ -53,10 +55,12 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
 ### **Entornos de desarrollo:**
 
-![Visual Studio Code - Dark Mode](https://img.shields.io/static/v1?label=Visual%20Studio%20Code&message=Dark%20Mode&color=5208F0&logo=visualstudiocode)
+![Visual Studio Code - Dark Mode](https://img.shields.io/static/v1?label=Visual%20Studio%20Code&message=Dark%20Mode&color=5208F0&logo=visualstudiocode) IDE
 
-![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=5208F0&logo=ganache)
+![Remix IDE - Dark Mode](https://img.shields.io/static/v1?label=Remix%20IDE&message=Dark%20Mode&color=5208F0&logo=remixide) IDE para desarrollo de Smart Contracts
 
-![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=5208F0&logo=truffle)
+![ganache - v^7.0.3](https://img.shields.io/static/v1?label=ganache&message=v0.8.13&color=5208F0&logo=ganache) Pruebas despligue Smart Contracts
 
-![Web3JS - v1.7.3](https://img.shields.io/static/v1?label=Web3JS&message=v1.7.3&color=5208F0&logo=Web3JS)
+![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=5208F0&logo=truffle) Compilar, test, debug y despliegue de Smart Contracts
+
+![Web3JS - v1.7.3](https://img.shields.io/static/v1?label=Web3JS&message=v1.7.3&color=5208F0&logo=Web3JS) colección de bibliotecas que permiten interactuar con un nodo ethereum local o remoto

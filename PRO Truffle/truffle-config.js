@@ -19,7 +19,7 @@
  */
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
-// libreria recoger la wallet para utilizarla y desplegar nuestros contratos
+//
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
@@ -33,10 +33,6 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
-
-  dashboard: {
-    port: 24012
-  },
 
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -85,7 +81,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.13",      // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.4",      // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
