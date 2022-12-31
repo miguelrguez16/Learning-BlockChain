@@ -111,4 +111,17 @@ contract("customERC20", accounts => {
 
   });
 
+  it("increase and decrease allowance", async () => {
+    let instance = await customERC20.deployed();
+
+    let _totalBalance = await instance.balanceOf(accounts[0]);
+    console.log("Total balance account[0]=", _totalBalance)
+    await instance.destruirTokens(accounts[0], _totalBalance);
+    _totalBalance = await instance.balanceOf(accounts[0]);
+    assert.equal(_totalBalance, 0);
+
+
+  });
+
+
 })
