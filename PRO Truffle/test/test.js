@@ -30,6 +30,20 @@ contract("customERC20", accounts => {
     let instance = await customERC20.deployed();
 
     let _initialSupply = await instance.totalSupply.call();
-    assert.equal(0, _initialSupply, "InitialSupply must be equal Zero");
+    assert.equal(0, _initialSupply, "InitialSupply must be equal Zero in the init");
+
+    await instance.crearTokens();
+
+    let _afterFirstSupply = await instance.totalSupply.call();
+    assert.equal(_afterFirstSupply, 1000, "First Supply equal to 1000");
+
+    let _balance = await instance.balanceOf.call(accounts[0]);
+    assert.equal(_balance, 1000);
+
+    let _balanceAddress1 = await instance.balanceOf.call(accounts[1]);
+    assert.equal(_balanceAddress1, 0);
   })
+
+
+
 })
