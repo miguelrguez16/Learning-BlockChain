@@ -82,9 +82,33 @@ contract("customERC20", accounts => {
     let _allowance_after_transfer = await instance.allowance(accounts[0], accounts[1]);
     assert.equal(_allowance_after_transfer, 0); //ERROR
 
-
+    let _balanceAccount2 = await instance.balanceOf(accounts[2]);
+    assert.equal(_balanceAccount2, AMOUNT_ALLOWANCE);
 
   });
 
+
+  it("increase and decrease allowance", async () => {
+    let instance = await customERC20.deployed();
+    const AMOUNT_ALLOWANCE = 100;
+    await instance.approve(accounts[5], AMOUNT_ALLOWANCE, { from: accounts[0] });
+    let _current_allowance = await instance.allowance(accounts[0], accounts[5]);
+    assert.equal(_current_allowance, AMOUNT_ALLOWANCE);
+
+    const INCREASE_ALLOWANCE = 200;
+    await instance.increaseAllowance(accounts[5], INCREASE_ALLOWANCE);
+
+    let _allowance_after_increase = await instance.allowance(accounts[0], accounts[5]);
+    let TOTAL_ALLOWANCE = AMOUNT_ALLOWANCE + INCREASE_ALLOWANCE
+    assert.equal(_allowance_after_increase, TOTAL_ALLOWANCE);
+
+    const DECREASE_ALLOWANCE = 50;
+    await instance.decreaseAllowance(accounts[5], DECREASE_ALLOWANCE);
+    TOTAL_ALLOWANCE = TOTAL_ALLOWANCE - DECREASE_ALLOWANCE;
+
+    let _allowance_after_decrease = await instance.allowance(accounts[0], accounts[5]);
+    assert.equal(_allowance_after_decrease, TOTAL_ALLOWANCE);
+
+  });
 
 })
