@@ -78,7 +78,12 @@ contract ArtToken is ERC721, Ownable {
     ************************************/
 
     // Visualize the balance of the Smart Contract
-    function infoSmartContract() external view onlyOwner returns (address, uint256)  {
+    function infoSmartContract()
+        external
+        view
+        onlyOwner
+        returns (address, uint256)
+    {
         address smartContractAddress = address(this);
         uint256 smartContractMoney = address(this).balance / 10**18;
 
@@ -129,9 +134,8 @@ contract ArtToken is ERC721, Ownable {
     // level up NFT artWork
     function(uint256 _idArtWok) external payable {
         require(OwnerOf(_idArtWok) == msg.sender, "Error: not owner of NFT");
-        require(msg.value >= 1 ether, "Error: insuficient ether to level up")
+        require(msg.value >= 1 ether, "Error: insuficient ether to level up");
         Art storage artToLevelUp = artWorks[_idArtWok];
         artToLevelUp.level++;
     }
-
 }
