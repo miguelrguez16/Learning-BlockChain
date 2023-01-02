@@ -8,3 +8,4 @@
 /.idea/vcs.xml
 .prettierrc.json
 **/build/contracts/**.json
+**/node_modules/**

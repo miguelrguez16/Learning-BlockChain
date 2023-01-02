@@ -24,6 +24,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [GitHub Ganache](https://github.com/trufflesuite/ganache)
 - [Documentacion Truffle](https://trufflesuite.com/docs/truffle/)
 - [Documentación WEB3JS](https://web3js.readthedocs.io/en/v1.7.3/getting-started.html)
+- [Doucmentación Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
 
 - [Video del coste del gas en los diferentes lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
 
