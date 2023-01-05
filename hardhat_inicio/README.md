@@ -46,4 +46,17 @@ npx hardhat console
 
 - config: muestra en consola la configuracion
 - ethers: info del plugin instalado
--
+
+### Paquete para ejecutar comandos de hardhat más cortos
+
+Descarga:
+
+```shell
+npm i -g hardhat-shorthand
+```
+
+Instalación:
+
+```shell
+hardhat-completion install
+```
