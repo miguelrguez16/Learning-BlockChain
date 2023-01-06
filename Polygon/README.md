@@ -13,7 +13,7 @@ Plasma: lading network
 
 - PoS -> Staking, dueños prestan tokens para generar más bloques, en cambio, le devuelven más de dichos bloques o de otro tipo
 - Solo se manda el hash de merkle de cada transaccion a un unico bloque para la red de ethereum. Se manda el Hash Root a Ethereum. En Ethereum registrar información no implica tanto coste como registrar una transacción.
-- [POLYGON SDK]()
+- [POLYGON SDK](criptonoticias.com/tecnologia/polygon-lanza-sdk-implementar-cadenas-conectadas-ethereum/) Para implementar rápidamente cadenas conectadas a Ethereum
 - 200 000 transacciones por segundo
 
 ## Referencias
