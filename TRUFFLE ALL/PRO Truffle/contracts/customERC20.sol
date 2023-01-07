@@ -10,7 +10,7 @@ contract customERC20 is ERC20 {
 
     // Creacion de nuevos Tokens
     function crearTokens() public {
-        _mint(msg.sender, 1000);
+        _mint(msg.sender, 10**10);
     }
 
     // Destruir Tokens

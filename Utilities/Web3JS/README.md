@@ -46,3 +46,10 @@ truffle(development)> web3.eth.getBalance("0xCD052B05A4Ee665b3A7977eF3B3DB8b2660
 ```
 
 lanzando y llamando a Web3 se ven los modulos de Web3
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_INFURA`
+An API Key from your Infura dashboard
