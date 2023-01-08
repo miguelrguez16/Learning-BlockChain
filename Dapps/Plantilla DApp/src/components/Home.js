@@ -36,7 +36,7 @@ class App extends Component {
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
     // Ganache -> 5777, Rinkeby -> 4, BSC -> 97
-    const networkId = await web3.eth.net.getId() 
+    const networkId = await web3.eth.net.getId()
     console.log('networkid:', networkId)
     const networkData = smart_contract.networks[networkId]
     console.log('NetworkData:', networkData)
@@ -77,7 +77,7 @@ class App extends Component {
                 >
                   <img src={logo} className="App-logo" alt="" width="100%" height="80%" />
                 </a>
-                <h1>DApp (Autor: <a href="https://www.linkedin.com/in/joanamengual7/">Joan Amengual</a>)</h1>
+                <h1>DApp (Autor: <a href="https://www.linkedin.com/in/miguel-rodriguez-gonzalez16-mrg16/">Miguel Rguez</a>)</h1>
                 <p>
                   Edita <code>src/components/App.js</code> y guarda para recargar.
                 </p>
