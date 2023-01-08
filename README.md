@@ -28,13 +28,12 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [ETHERS.JS](https://docs.ethers.org/v5/)
 - [INFURA NODO](https://app.infura.io/)
 
-- [Video del coste del gas en los diferentes lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
-
 ### _Programando_
 
 - [Hashing](https://docs.soliditylang.org/en/v0.8.13/units-and-global-variables.html?highlight=ripemd#mathematical-and-cryptographic-functions)
 - [Send & Recept Ethe](https://docs.soliditylang.org/en/v0.8.13/security-considerations.html?#sending-and-receiving-ether)
 - [using Counters for Counters.Counter;](https://ethereum.stackexchange.com/questions/97186/what-is-the-reason-behind-writing-using-counters-for-counters-counters-when-us)
+- [Video del coste del gas en los diferentes lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
 
 ### _Other Resources_
 
@@ -43,6 +42,8 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [Web3 collection Resources](https://www.web3collection.app/)
 - [Documentacion Truffle](https://trufflesuite.com/docs/truffle/)
 - [Documentacion Ganache](https://trufflesuite.com/docs/ganache/)
+- [Use Web3 xyz](https://useweb3.xyz)
+- [Uniswap web3 react](https://github.com/Uniswap/web3-react)
 
 ## _Tech Stack_
 
