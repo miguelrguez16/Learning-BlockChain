@@ -25,8 +25,8 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [Documentacion Truffle](https://trufflesuite.com/docs/truffle/)
 - [Documentación WEB3JS](https://web3js.readthedocs.io/en/v1.7.3/getting-started.html)
 - [Doucmentación Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
-- [ETHERS.JS](https://docs.ethers.org/v5/)
-- [INFURA NODO](https://app.infura.io/)
+- [Ethers](https://docs.ethers.org/v5/)
+- [Infura (nodo)](https://app.infura.io/)
 
 ### _Programando_
 
