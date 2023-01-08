@@ -26,6 +26,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [Documentación WEB3JS](https://web3js.readthedocs.io/en/v1.7.3/getting-started.html)
 - [Doucmentación Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
 - [ETHERS.JS](https://docs.ethers.org/v5/)
+- [INFURA NODO](https://app.infura.io/)
 
 - [Video del coste del gas en los diferentes lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
 
