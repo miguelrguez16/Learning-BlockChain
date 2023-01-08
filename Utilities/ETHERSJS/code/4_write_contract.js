@@ -16,5 +16,35 @@ const ERC20_ABI = [
     "function symbol() public view returns (string)",
     "function totalSupply() public view returns (uint256)",
     "function balanceOf(address) view returns (uint256)",
-    "function transfer(address to, uint amount) returns (bool)"
+    "function transfer(address to, uint amount) returns (bool)",
+    "function decimals() view returns (uint256)"
 ];
+
+/* from remix IDE  */
+const customERC20address = '0xd3646A968990db104C5b8740e04eAD82b6bd81f7';
+
+
+const contract = new ethers.Contract(customERC20address, ERC20_ABI, provider);
+
+const main = async () => {
+    let balance1 = await contract.balanceOf(account1);
+    let balance2 = await contract.balanceOf(account2);
+
+    const decimals = await contract.decimals();
+    console.log(`Number of decimals: ${decimals}`);
+    console.log(`Balance [${account1}]: [${balance1 / 10 ** decimals} CustomERC20]`);
+    console.log(`Balance [${account2}]: [${balance2 / 10 ** decimals} CustomERC20]`);
+
+    const contractWallet = contract.connect(wallet);
+    const tx = await contractWallet.transfer(account2, balance1);
+    await tx.wait();
+
+    console.log("tx:", tx);
+
+    balance1 = await contract.balanceOf(account1);
+    balance2 = await contract.balanceOf(account2);
+    console.log(`Balance [${account1}]: [${balance1 / 10 ** decimals} CustomERC20]`);
+    console.log(`Balance [${account2}]: [${balance2 / 10 ** decimals} CustomERC20]`);
+
+}
+main();
