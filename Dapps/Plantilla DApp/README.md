@@ -43,3 +43,10 @@ nvm use 16.19.0
 ```shell
 npm start
 ```
+
+## Migrar contratos a Ganache (BlockChain)
+
+```shell
+npx truffle migrate --reset
+npx truffle migrate --reset --compile-all
+```

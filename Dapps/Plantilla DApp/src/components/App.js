@@ -5,7 +5,7 @@ import Home from './Home';
 import Footer from './Footer';
 
 class App extends Component {
-    
+
     render() {
         return (
             <BrowserRouter>
