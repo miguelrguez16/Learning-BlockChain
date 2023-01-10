@@ -1,5 +1,6 @@
-const JamToken = artifacts.require("JamToken");
-const StellartToken = artifacts.require("StellartToken");
+// eslint-disable-next-line no-undef
+const JamToken = artifacts.require("JamToken");// eslint-disable-next-line no-undef
+const StellartToken = artifacts.require("StellartToken");// eslint-disable-next-line no-undef
 const TokenFarm = artifacts.require("TokenFarm");
 
 module.exports = async function (deployer, network, accounts) {

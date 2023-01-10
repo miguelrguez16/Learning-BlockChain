@@ -1,11 +1,13 @@
 # Plantilla Dapps
 
-Plantilla Dapps
+Dapp Defi
 
 ## Badges
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Biblioteca React](https://img.shields.io/badge/react-Biblioteca-blue)](https://es.reactjs.org/)
+[![Ganache - BlockaChain Local](https://img.shields.io/static/v1?label=ganache&message=BlockaChain%20Local&color=5208F0&logo=ganache)](https://trufflesuite.com/)
+![Truffle Herramienta](https://img.shields.io/static/v1?label=Truffle&message=Herramienta&color=5208F0&logo=truffle)
 
 ## Environment Variables
 
@@ -20,25 +22,25 @@ To run this project, you (probably) need to add the following environment variab
 **Testing** Truffle and Ganache
 **BlockChain** Polygon
 
-## Installing packages
+## Instalar los paquetes del package.json
 
 ```shell
 npm i package.json
 ```
 
-## run smart contract compiler
+## Lanzar compilacion de los smart contracts
 
 ```shell
 npx truffle compile
 ```
 
-## set version node with nvm
+## Utilizar la siguiente version de node con nvm
 
 ```shell
 nvm use 16.19.0
 ```
 
-## run react
+## Correr react (development)
 
 ```shell
 npm start
@@ -49,4 +51,10 @@ npm start
 ```shell
 npx truffle migrate --reset
 npx truffle migrate --reset --compile-all
+```
+
+## Ejecutar el script para la emision de los tokens de recompensa
+
+```shell
+npx truffle exec scripts\issue-token.js
 ```
