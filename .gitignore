@@ -10,3 +10,12 @@
 **/build/contracts/**.json
 **/node_modules/**
 .env
+Dapps/Plantilla DApp/.secret
+Dapps/Plantilla DApp/src/abis/JamToken.json
+Dapps/Plantilla DApp/src/abis/Migrations.json
+Dapps/Plantilla DApp/src/abis/StellartToken.json
+Dapps/Plantilla DApp/src/abis/TokenFarm.json
+Dapps/Plantilla DApp/src/abis/JamToken.json
+Dapps/Plantilla DApp/src/abis/Migrations.json
+Dapps/Plantilla DApp/src/abis/StellartToken.json
+Dapps/Plantilla DApp/src/abis/TokenFarm.json
