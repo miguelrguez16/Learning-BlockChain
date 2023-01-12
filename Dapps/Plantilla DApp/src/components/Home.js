@@ -97,13 +97,13 @@ class App extends Component {
       });
   }
 
-  unstakeTokens = () => {
-    this.setState({ loading: true });
-    this.state.jamToken.methods.unstakeTokens()
+  unstakeTokens = (amount) => {
+    this.setState({ loading: true })
+    this.state.tokenFarm.methods.unstakeTokens()
       .send({ from: this.state.account })
       .on('transactionHash', (hash) => {
-        this.setState({ loading: false });
-      });
+        this.setState({ loading: false })
+      })
   }
 
 

@@ -48,14 +48,14 @@ module.exports = {
     bsc: {
       provider: () => new HDWalletProvider(mnemonic, `https://data-seed-prebsc-1-s1.binance.org:8545`),
       network_id: 97,
-      confirmations: 1,
+      confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true
     },
     // Polygon (MATIC)
     polygon: {
       provider: () => new HDWalletProvider(mnemonic,
-        `https://rpc-mainnet.maticvigil.com/v1/c5360987d7e725a55a908d5f20cad696680c8e6f`),
+        `https://rpc-mumbai.maticvigil.com/v1/c5360987d7e725a55a908d5f20cad696680c8e6f`),
       network_id: 80001,
       confirmations: 1,
       timeoutBlocks: 200,

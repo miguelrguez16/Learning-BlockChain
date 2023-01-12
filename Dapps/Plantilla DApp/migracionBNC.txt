@@ -1,0 +1,105 @@
+    at processTimers (node:internal/timers:502:7)
+PS C:\Users\**\Plantilla DApp> npx truffle migrate --reset --network bsc
+
+Compiling your contracts...
+===========================
+> Compiling .\src\contracts\JamToken.sol
+> Compiling .\src\contracts\StellartToken.sol
+> Compiling .\src\contracts\TokenFarm.sol
+> Artifacts written to C:\Users\migue\OneDrive\Escritorio\Learning-BlockChain\Dapps\Plantilla DApp\src\abis
+> Compiled successfully using:
+   - solc: 0.8.4+commit.c7e474f2.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'bsc'
+> Network id:      97
+> Block gas limit: 49998474 (0x2faea8a)
+
+
+2_initial_migration.js
+======================
+
+   Deploying 'JamToken'
+   --------------------
+   > transaction hash:    0xb73ed44677ab24459d248d6b17ac71c887abe24f382e7d4d961128a912b72d11
+   > Blocks: 5            Seconds: 15
+   > contract address:    0x331001Be353282B419762A57549499A830501BA8
+   > block number:        26286609
+   > block timestamp:     1673539637
+   > account:             0xfdF3BE754f88500Dce5A85369E5fF6487Aa8297A
+   > balance:             0.46372799
+   > gas used:            853498 (0xd05fa)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00853498 ETH
+
+   Pausing for 10 confirmations...
+
+   --------------------------------
+   > confirmation number: 2 (block: 26286614)
+   > confirmation number: 3 (block: 26286615)
+   > confirmation number: 4 (block: 26286616)
+   > confirmation number: 5 (block: 26286617)
+   > confirmation number: 7 (block: 26286619)
+   > confirmation number: 8 (block: 26286620)
+   > confirmation number: 10 (block: 26286622)
+
+   Deploying 'StellartToken'
+   -------------------------
+   > transaction hash:    0x1141045317aae7f68512d5a7f61470ab3111a1f634d49909d96992bdefbc0c3b
+   > Blocks: 4            Seconds: 14
+   > contract address:    0xF907C38F5d19E3E62d1F3f1755E1Cc5971A5dbe0
+   > block number:        26286629
+   > block timestamp:     1673539697
+   > account:             0xfdF3BE754f88500Dce5A85369E5fF6487Aa8297A
+   > balance:             0.45519241
+   > gas used:            853558 (0xd0636)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00853558 ETH
+
+   Pausing for 10 confirmations...
+
+   --------------------------------
+   > confirmation number: 2 (block: 26286634)
+   > confirmation number: 3 (block: 26286635)
+   > confirmation number: 4 (block: 26286636)
+   > confirmation number: 6 (block: 26286638)
+   > confirmation number: 7 (block: 26286639)
+   > confirmation number: 8 (block: 26286640)
+   > confirmation number: 10 (block: 26286642)
+
+   Deploying 'TokenFarm'
+   ---------------------
+   > transaction hash:    0x30429b0873f27f6120155261f5c3ca4e2fb29ce64aaa1df118ef2125f18e3665
+   > Blocks: 5            Seconds: 15
+   > contract address:    0x55C3233305A6C007fc59C845e88aA5d003cE891F
+   > block number:        26286649
+   > block timestamp:     1673539757
+   > account:             0xfdF3BE754f88500Dce5A85369E5fF6487Aa8297A
+   > balance:             0.44452594
+   > gas used:            1066647 (0x104697)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01066647 ETH
+
+   Pausing for 10 confirmations...
+
+   --------------------------------
+   > confirmation number: 1 (block: 26286652)
+   > confirmation number: 3 (block: 26286654)
+   > confirmation number: 4 (block: 26286655)
+   > confirmation number: 6 (block: 26286657)
+   > confirmation number: 7 (block: 26286658)
+   > confirmation number: 9 (block: 26286660)
+   > confirmation number: 10 (block: 26286661)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02773703 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.02773703 ETH

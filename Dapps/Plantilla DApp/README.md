@@ -84,4 +84,21 @@ module.exports = {
   }
 ```
 
+## Importante
+
+Para hacer la siguiente parte se debe tener un archivo .secret que permita coger el mnemonic con
+la contraseña de la cartera y dicha cartera accesible para el despliegue
+
+## Migrar a la Tesnet Binance desde truffle
+
+```bash
+npx truffle migrate --reset --network bsc
+```
+
+## Emitir recompensas en BNC
+
+```bash
+npx truffle exec scripts\issue-token.js --network bsc
+```
+
 [Más Info](https://docs.bnbchain.org/docs/truffle-new/)
