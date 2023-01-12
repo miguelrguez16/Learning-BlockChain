@@ -11,11 +11,7 @@
 **/node_modules/**
 .env
 Dapps/Plantilla DApp/.secret
-Dapps/Plantilla DApp/src/abis/JamToken.json
-Dapps/Plantilla DApp/src/abis/Migrations.json
-Dapps/Plantilla DApp/src/abis/StellartToken.json
-Dapps/Plantilla DApp/src/abis/TokenFarm.json
-Dapps/Plantilla DApp/src/abis/JamToken.json
-Dapps/Plantilla DApp/src/abis/Migrations.json
-Dapps/Plantilla DApp/src/abis/StellartToken.json
-Dapps/Plantilla DApp/src/abis/TokenFarm.json
+Dapps/Plantilla DApp/src/abis/**.json
+Dapps/Loteria/src/abis/**.json
+Dapps/Loteria/.secret
+
