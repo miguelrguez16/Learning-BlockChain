@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
-
+import smart_contract from '../abis/loteria.json';
 import Navigation from './Navbar';
 import MyCarousel from './Carousel';
+import Swal from 'sweetalert2';
 
-class App extends Component {
+class Tokens extends Component {
 
   async componentDidMount() {
     // 1. Carga de Web3
@@ -62,4 +63,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Tokens;
