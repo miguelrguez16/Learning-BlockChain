@@ -47,19 +47,17 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
 ## _Tech Stack_
 
-!["//"](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=White)
+!["//"](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=White) !["//"](https://img.shields.io/badge/Binance-3C3C3D?style=for-the-badge&logo=Binance&logoColor=White) !["//"](https://img.shields.io/badge/Binance-3C3C3D?style=for-the-badge&logo=Binance&logoColor=White)
 
 !["//"](https://img.shields.io/badge/Web3.0-3C3C3D?style=for-the-badge&logo=&logoColor=blue)
 
 !["//"](https://img.shields.io/badge/MetaMask-3C3C3D?style=for-the-badge&logo=MetaMask&logoColor=blue)
 
-### **Programming Language**
-
 ![solidity - v0.8.13](https://img.shields.io/static/v1?label=solidity&message=v0.8.13&color=5208F0&logo=solidity)
 
-### **Entornos de desarrollo:**
+![javascript](https://badges.aleen42.com/src/javascript.svg)
 
-![Visual Studio Code - Dark Mode](https://img.shields.io/static/v1?label=Visual%20Studio%20Code&message=Dark%20Mode&color=5208F0&logo=visualstudiocode) IDE
+![visual_studio](https://badges.aleen42.com/src/visual_studio.svg)
 
 ![Remix IDE - Dark Mode](https://img.shields.io/static/v1?label=Remix%20IDE&message=Dark%20Mode&color=5208F0&logo=remixide) IDE para desarrollo de Smart Contracts
 
@@ -68,3 +66,9 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 ![Truffle - v5.5.9](https://img.shields.io/static/v1?label=Truffle&message=v5.5.9&color=5208F0&logo=truffle) Compilar, test, debug y despliegue de Smart Contracts
 
 ![Web3JS - v1.7.3](https://img.shields.io/static/v1?label=Web3JS&message=v1.7.3&color=5208F0&logo=Web3JS) colección de bibliotecas que permiten interactuar con un nodo ethereum local o remoto
+
+![react](https://badges.aleen42.com/src/react.svg)
+
+![node](https://badges.aleen42.com/src/node.svg)
+
+![github](https://badges.aleen42.com/src/github.svg)
