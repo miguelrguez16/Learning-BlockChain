@@ -47,7 +47,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 
 ## _Tech Stack_
 
-!["//"](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=White) !["//"](https://img.shields.io/badge/Binance-3C3C3D?style=for-the-badge&logo=Binance&logoColor=White) !["//"](https://img.shields.io/badge/Binance-3C3C3D?style=for-the-badge&logo=Binance&logoColor=White)
+!["//"](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=White) !["//"](https://img.shields.io/badge/Binance-3C3C3D?style=for-the-badge&logo=Binance&logoColor=White) !["//"](https://img.shields.io/badge/Avalanche-3C3C3D?style=for-the-badge&logo=Avalanche&logoColor=White) !["//"](https://img.shields.io/badge/Polygon-3C3C3D?style=for-the-badge&logo=Polygon&logoColor=White)
 
 !["//"](https://img.shields.io/badge/Web3.0-3C3C3D?style=for-the-badge&logo=&logoColor=blue)
 
