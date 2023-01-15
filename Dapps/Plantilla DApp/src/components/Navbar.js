@@ -16,8 +16,6 @@ const Navigation = ({ account }) => {
                     </Nav>
                     <Nav>
                         <Nav.Link
-                            href={`https://etherscan.io/address/${account}`}
-                            target="_blank"
                             rel="noopener noreferrer"
                             className="button nav-button btn-sm mx-4">
                             <Button variant="outline-light">

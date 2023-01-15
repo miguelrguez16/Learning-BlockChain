@@ -71,7 +71,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'info',
         title: 'Balance',
-        width: 800, padding: '3em',
+        width: 500, padding: '3em',
         text: `${_balanceCurrentUser} tokens`,
       });
 
@@ -91,7 +91,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'info',
         title: 'Balance',
-        width: 800, padding: '3em',
+        width: 500, padding: '3em',
         text: `${_balanceSC} tokens`,
       });
 
@@ -111,7 +111,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'info',
         title: 'Balance',
-        width: 800, padding: '3em',
+        width: 500, padding: '3em',
         text: `${_balanceSCEthers} Ethers`,
       });
 
@@ -135,10 +135,32 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'success',
         title: '¡Compra de tokens realizada!',
-        width: 800,
+        width: 500,
         padding: '3em',
         text: `Has comprado ${_numTokens} token/s por un valor de ${ethers / 10 ** 18} ether/s`,
-      })
+      });
+    } catch (err) {
+      this.setState({ errorMessage: err })
+    } finally {
+      this.setState({ loading: false })
+    }
+  }
+
+  _devolverTokens = async (_numTokens) => {
+    console.log("Devolución de los tokens");
+    try {
+      await this.state.contract.methods.devolverTokens(_numTokens).send({
+        from: this.state.account
+      });
+
+      Swal.fire({
+        icon: 'warning',
+        title: 'Has devuelto los siguientes tokens',
+        width: 500,
+        padding: '3em',
+        text: `Has devuelto ${_numTokens} token/s`,
+      });
+
     } catch (err) {
       this.setState({ errorMessage: err })
     } finally {
@@ -173,7 +195,7 @@ class Tokens extends Component {
                       </form>
                     </Col>
                     <Col>
-                      <h3>Tokens SC</h3>
+                      <h4>Tokens SC</h4>
                       <form
                         onSubmit={
                           (event) => {
@@ -209,11 +231,13 @@ class Tokens extends Component {
                   onSubmit={
                     (event) => {
                       event.preventDefault();
-                      const cantidad = this._numTokens.value;
-                      this._compraTokens(cantidad);
+                      var value = document.getElementById('inputCompraTokens').value;
+                      // TODO: rehacer todos
+                      // const cantidad = this._numTokens.value;
+                      this._compraTokens(value);
                     }}
                 >
-                  <input type='number'
+                  <input type='number' id='inputCompraTokens'
                     className='form-control mb-1'
                     placeholder='0'
                     ref={(input) => this._numTokens = input} />
@@ -225,7 +249,21 @@ class Tokens extends Component {
                 }}>
                   Devolución de tokens
                 </h4>
-
+                <form
+                  onSubmit={
+                    (event) => {
+                      event.preventDefault();
+                      const cantidad = this._numTokens.value;
+                      this._devolverTokens(cantidad);
+                    }}
+                >
+                  <input type='number'
+                    className='form-control mb-1'
+                    placeholder='0'
+                    ref={(input) => this._numTokens = input} />
+                  <input type='submit'
+                    className='bbtn btn-block btn-success btn-sm' value='devolución de Tokens' />
+                </form>
               </div>
             </main>
           </div>
