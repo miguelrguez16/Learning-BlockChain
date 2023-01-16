@@ -10,7 +10,10 @@ import { Container } from 'react-bootstrap';
 class Tokens extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
+    this.valueInputCompra = React.createRef();
+    this.valueInputDev = React.createRef();
+
     this.state = {
       contract: null,
       account: '0x0',
@@ -124,9 +127,9 @@ class Tokens extends Component {
 
   _compraTokens = async (_numTokens) => {
     try {
-      console.log("Compra de tokens en ejecucion...")
-      const web3 = window.web3
-      const ethers = web3.utils.toWei(_numTokens, 'ether')
+      console.log(`Compra de tokens: [${_numTokens}]`);
+      const web3 = window.web3;
+      const ethers = web3.utils.toWei(_numTokens, 'ether');
       await this.state.contract.methods.compraTokens(_numTokens).send(
         {
           from: this.state.account,
@@ -140,14 +143,14 @@ class Tokens extends Component {
         text: `Has comprado ${_numTokens} token/s por un valor de ${ethers / 10 ** 18} ether/s`,
       });
     } catch (err) {
-      this.setState({ errorMessage: err })
+      this.setState({ errorMessage: err });
     } finally {
-      this.setState({ loading: false })
+      this.setState({ loading: false });
     }
   }
 
   _devolverTokens = async (_numTokens) => {
-    console.log("Devolución de los tokens");
+    console.log(`Devolucion tokens: [${_numTokens}]`);
     try {
       await this.state.contract.methods.devolverTokens(_numTokens).send({
         from: this.state.account
@@ -231,18 +234,17 @@ class Tokens extends Component {
                   onSubmit={
                     (event) => {
                       event.preventDefault();
-                      var value = document.getElementById('inputCompraTokens').value;
-                      // TODO: rehacer todos
-                      // const cantidad = this._numTokens.value;
-                      this._compraTokens(value);
+                      const cantidad = this.valueInputCompra.value;
+                      this._compraTokens(cantidad);
                     }}
                 >
                   <input type='number' id='inputCompraTokens'
                     className='form-control mb-1'
                     placeholder='0'
-                    ref={(input) => this._numTokens = input} />
-                  <input type='submit'
-                    className='bbtn btn-block btn-success btn-sm' value='compra de Tokens' />
+                    ref={(input) => this.valueInputCompra = input}
+                  />
+                  <button type='submit'
+                    className='bbtn btn-block btn-success btn-sm'>compra de Tokens</button>
                 </form>
                 <h4 style={{
                   marginTop: '20px'
@@ -253,14 +255,14 @@ class Tokens extends Component {
                   onSubmit={
                     (event) => {
                       event.preventDefault();
-                      const cantidad = this._numTokens.value;
+                      const cantidad = this.valueInputDev.value;
                       this._devolverTokens(cantidad);
                     }}
                 >
                   <input type='number'
                     className='form-control mb-1'
                     placeholder='0'
-                    ref={(input) => this._numTokens = input} />
+                    ref={(input) => this.valueInputDev = input} />
                   <input type='submit'
                     className='bbtn btn-block btn-success btn-sm' value='devolución de Tokens' />
                 </form>
