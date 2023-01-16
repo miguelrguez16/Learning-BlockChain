@@ -18,7 +18,6 @@ class Loteria extends Component {
             loading: true,
             errorMessage: '',
             precioBoleto: 0,
-            tusBoletos: {}
         }
     }
 
@@ -75,7 +74,7 @@ class Loteria extends Component {
             Swal.fire({
                 icon: 'success',
                 title: 'Compra de boletos',
-                width: 500,
+                width: '500px',
                 padding: '3em',
                 text: `Has comprado ${_numBoletos} boleto/s`,
             });
@@ -107,7 +106,12 @@ class Loteria extends Component {
                 this.state.account
             ).call();
 
-            this.setState({ tusBoletos: _boletos })
+            Swal.fire({
+                icon: 'info',
+                title: 'Balance',
+                width: 500, padding: '3em',
+                text: `Tus boletos son: ${_boletos}`,
+            });
 
         } catch (err) {
             this.setState({ errorMessage: err });
@@ -162,12 +166,6 @@ class Loteria extends Component {
                                                 event.preventDefault();
                                                 this._tusBoletos();
                                             }}>BOLETOS</button>
-                                            <table id='tablaBoletos'>
-                                                <thead>Boletos</thead>
-                                                <tbody>
-
-                                                </tbody>
-                                            </table>
                                         </Col>
                                     </Row>
                                 </Container>

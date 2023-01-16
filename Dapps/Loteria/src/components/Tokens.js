@@ -94,7 +94,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'info',
         title: 'Balance',
-        width: 500, padding: '3em',
+        width: '500px', padding: '3em',
         text: `${_balanceSC} tokens`,
       });
 
@@ -114,7 +114,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'info',
         title: 'Balance',
-        width: 500, padding: '3em',
+        width: '500px', padding: '3em',
         text: `${_balanceSCEthers} Ethers`,
       });
 
@@ -138,7 +138,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'success',
         title: '¡Compra de tokens realizada!',
-        width: 500,
+        width: '500px',
         padding: '3em',
         text: `Has comprado ${_numTokens} token/s por un valor de ${ethers / 10 ** 18} ether/s`,
       });
@@ -159,7 +159,7 @@ class Tokens extends Component {
       Swal.fire({
         icon: 'warning',
         title: 'Has devuelto los siguientes tokens',
-        width: 500,
+        width: '500px',
         padding: '3em',
         text: `Has devuelto ${_numTokens} token/s`,
       });
