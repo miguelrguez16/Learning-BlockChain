@@ -60,7 +60,7 @@ const Create = ({ marketplace, nft }) => {
     return (
         <div>
             <div className='row'>
-                <main role='main' className='col-lg-12 mx-auto' style={{ maxWidth: '1000px' }}>
+                <main role='main' className='col-lg-12 mx-auto' style={{ maxWidth: '1000px', paddingTop: '20px' }}>
                     <div className='content mx-auto'>
                         <Row className='g-4'>
                             <Form.Control type='file' required name='file' onChange={uploadToIpfs} />
