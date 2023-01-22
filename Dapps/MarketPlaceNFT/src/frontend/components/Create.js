@@ -25,8 +25,7 @@ const Create = ({ marketplace, nft }) => {
         if (typeof currentFile !== 'undefined') {
             try {
                 const cid = await clientIpfs.add(currentFile);
-                setImage(cid);
-                debugger;
+                setImage(`http://127.0.0.1:8080/ipfs/${cid.path}`);
             } catch (error) {
                 console.log("ipfs image uploadToIpfs error: ", error);
             }

@@ -16,11 +16,8 @@ const Home = ({ marketplace, nft }) => {
         const item = await marketplace.items(i);
         if (!item.sold) {
           const uri = await nft.tokenURI(item.tokenId);
-          console.log(uri);
           const response = await fetch(uri);
-          console.log(response);
           const metadata = await response.json();
-          console.log(metadata);
           const totalPrice = await marketplace.getTotalPrice(item.itemId);
           items.push({
             totalPrice,
@@ -35,7 +32,7 @@ const Home = ({ marketplace, nft }) => {
       }
       setLoading(false);
       setItems(items);
-      console.table(items);
+      console.table(items)
     } catch (error) {
       console.log(error);
     }
