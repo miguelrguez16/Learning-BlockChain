@@ -35,6 +35,17 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [using Counters for Counters.Counter;](https://ethereum.stackexchange.com/questions/97186/what-is-the-reason-behind-writing-using-counters-for-counters-counters-when-us)
 - [Video del coste del gas en los diferentes lenguajes](https://www.youtube.com/watch?v=sbc74oU94FM)
 
+### _FAUCET_
+
+- [Tesnet de Polygon - Faucet](https://mumbaifaucet.com/)
+- Conectar con Polygon
+  - [Mainet](/)
+  - [Tesnet](/)
+- [Tesnet de Binance - Faucet](https://testnet.binance.org/faucet-smart)
+- Conectar con Binance:
+  - [Mainet](https://bscscan.com/)
+  - [Tesnet](https://testnet.bscscan.com/)
+
 ### _Other Resources_
 
 - [StackOverflow web3 -> stackexchange](https://stackexchange.com/)
