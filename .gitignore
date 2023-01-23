@@ -13,7 +13,7 @@
 Dapps/Plantilla DApp/.secret
 Dapps/Plantilla DApp/src/abis/**.json
 Dapps/Loteria/src/abis/**.json
-Dapps/Loteria/.secret
+.secret
 
 Dapps/MarketPlaceNFT/src/backend/cache/solidity-files-cache.json
 Dapps/MarketPlaceNFT/src/frontend/contractsData/MarketPlace-address.json
@@ -21,3 +21,4 @@ Dapps/MarketPlaceNFT/src/frontend/contractsData/Marketplace.json
 Dapps/MarketPlaceNFT/src/frontend/contractsData/NFT-address.json
 Dapps/MarketPlaceNFT/src/frontend/contractsData/NFT.json
 Dapps/MarketPlaceNFT/package-lock.json
+**/build/**
