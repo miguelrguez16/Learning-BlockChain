@@ -198,7 +198,7 @@ contract ERC20 is IERC20 {
 
     // Estas funciones seran utilizadas en el momento que se quiera heredar dicho contrato
     // por ello se han marcado como virtual
-    // de esta manera ell contrato es modificable ante entradas el Overrided de 
+    // de esta manera el contrato es modificable ante entrada Overrided 
     function _beforeTokenTransfer(address from, address to,uint256 amount) internal virtual{}
     function _afterTokenTransfer(address from, address to,uint256 amount) internal virtual{}
 
