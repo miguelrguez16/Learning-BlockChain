@@ -27,6 +27,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [Doucmentación Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
 - [Ethers](https://docs.ethers.org/v5/)
 - [Infura (nodo)](https://app.infura.io/)
+- [SOLGRAPH](https://github.com/raineorshine/solgraph) Generates a DOT graph that visualizes function control flow of a Solidity contract and highlights potential security vulnerabilities.
 
 ### _Programando_
 
