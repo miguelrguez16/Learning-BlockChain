@@ -1,20 +1,13 @@
 **/artifacts/**
 **/.deps
 *_metadata*
-/.idea/sonarlint/issuestore/index.pb
-/.idea/Learning-BlockChain.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
 .prettierrc.json
 **/build/contracts/**.json
 **/node_modules/**
 .env
-Dapps/Plantilla DApp/.secret
-Dapps/Plantilla DApp/src/abis/**.json
-Dapps/Loteria/src/abis/**.json
+**/src/abis/**.json
 .secret
-
+**/.idea
 Dapps/MarketPlaceNFT/src/backend/cache/solidity-files-cache.json
 Dapps/MarketPlaceNFT/src/frontend/contractsData/MarketPlace-address.json
 Dapps/MarketPlaceNFT/src/frontend/contractsData/Marketplace.json
