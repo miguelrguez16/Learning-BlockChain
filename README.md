@@ -56,6 +56,7 @@ Aquí dejaré recursos que vaya encontrando sobre este gran mundo del web3
 - [Documentacion Ganache](https://trufflesuite.com/docs/ganache/)
 - [Use Web3 xyz](https://useweb3.xyz)
 - [Uniswap web3 react](https://github.com/Uniswap/web3-react)
+- [Emojis para markdown](https://tutorialmarkdown.com/emojis)
 
 ## _Tech Stack_
 
