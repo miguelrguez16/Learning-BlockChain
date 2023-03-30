@@ -18,17 +18,16 @@ const deployGovernanceToken: DeployFunction = async function
     });
 
     // verify in etherscan
-    log(`Deployed governance token to address: [${governanceToken.address}]`)
-    // log(network);
+    log(`delegating governance token to DEPLOYER ${deployer}`)
     await delegate(governanceToken.address, deployer);
-    log("deployed")
+    log("deployed governance token")
 };
 
-const delegate = async (governanceTokenAddress: string, deletedAccount: string) => {
+const delegate = async (governanceTokenAddress: string, delegateAccount: string) => {
     const governanceToken = await ethers.getContractAt("GovernanceToken", governanceTokenAddress);
-    const tx = await governanceToken.delegate(deletedAccount);
+    const tx = await governanceToken.delegate(delegateAccount);
     await tx.wait();
-    console.log(`Checkpoints ${await governanceToken.numCheckpoints(deletedAccount)} `)
+    console.log(`Checkpoints ${await governanceToken.numCheckpoints(delegateAccount)} `)
 }
 
 

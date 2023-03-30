@@ -7,11 +7,11 @@ const deployTimeLock: DeployFunction = async function (hre: HardhatRuntimeEnviro
     const { deploy, log } = deployments;
     const { deployer } = await getNamedAccounts();
 
-    log("Deploying governance token . . . ");
+    log("Deploying TimeLock . . . ");
 
     const timeLock = await deploy("TimeLock", {
         from: deployer,
-        args: [MIN_DELAY, [], [], DEFAULT_ADDRESS],
+        args: [MIN_DELAY, [], [], deployer],
         log: true,
         // wait Confirmations:
     });
