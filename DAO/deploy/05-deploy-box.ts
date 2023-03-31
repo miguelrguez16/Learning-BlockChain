@@ -3,7 +3,7 @@ import { DeployFunction } from 'hardhat-deploy/types';
 import { ethers } from 'hardhat';
 
 
-const setupGovernanceContract: DeployFunction = async function (
+const deployBox: DeployFunction = async function (
     hre: HardhatRuntimeEnvironment
 ) {
     const { getNamedAccounts, deployments } = hre;
@@ -17,13 +17,20 @@ const setupGovernanceContract: DeployFunction = async function (
         args: [],
         log: true,
     });
-    const boxContract = await ethers.getContractAt("Box", box.address)
-    const timeLock = await ethers.getContractAt("TimeLock", deployer);
-    const transferTx = await boxContract.transferOwnership(timeLock.address)
-    await transferTx.wait(1)
 
-    log(`\nEnd succesfully`)
+    const boxContract = await ethers.getContractAt("Box", box.address);
+    const timeLock = await ethers.getContract("TimeLock");
+
+    log(`Address boxContract is in: ${boxContract.address}`);
+    log(`Address timeLock is ${timeLock.address}`);
+
+    const transferTx = await boxContract.transferOwnership(timeLock.address);
+    await transferTx.wait(1);
+    log('Transfer Ownership of box to timeLock')
+
+
+    log(`\nEnd succesfully`);
 }
 
 
-export default setupGovernanceContract;
+export default deployBox;
