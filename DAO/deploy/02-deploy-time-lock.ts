@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
-import { MIN_DELAY, DEFAULT_ADDRESS } from '../helper-hardhat-config';
+import { MIN_DELAY, ZERO_ADDRESS } from '../Utils/helper-hardhat-config';
 
 const deployTimeLock: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     const { getNamedAccounts, deployments } = hre;

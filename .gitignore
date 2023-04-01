@@ -9,9 +9,7 @@
 .secret
 **/.idea
 Dapps/MarketPlaceNFT/src/backend/cache/solidity-files-cache.json
-Dapps/MarketPlaceNFT/src/frontend/contractsData/MarketPlace-address.json
-Dapps/MarketPlaceNFT/src/frontend/contractsData/Marketplace.json
-Dapps/MarketPlaceNFT/src/frontend/contractsData/NFT-address.json
-Dapps/MarketPlaceNFT/src/frontend/contractsData/NFT.json
+contractsData
 Dapps/MarketPlaceNFT/package-lock.json
 **/build/**
+DAO/deployments/localhost/**

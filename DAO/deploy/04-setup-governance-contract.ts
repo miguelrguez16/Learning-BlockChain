@@ -1,7 +1,7 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
 import { ethers } from 'hardhat';
-import { DEFAULT_ADDRESS } from '../helper-hardhat-config';
+import { ZERO_ADDRESS } from '../Utils/helper-hardhat-config';
 
 
 const setupGovernanceContract: DeployFunction = async function (
@@ -46,7 +46,7 @@ const setupGovernanceContract: DeployFunction = async function (
     await proposerTx.wait(1);
 
     // everybody can execute
-    const executorTx = await timeLock.grantRole(executorRole, DEFAULT_ADDRESS);
+    const executorTx = await timeLock.grantRole(executorRole, ZERO_ADDRESS);
     await executorTx.wait(1);
 
     // revoke permission
