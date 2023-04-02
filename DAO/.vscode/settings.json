@@ -1,10 +1,11 @@
 {
     "cSpell.words": [
+        "keccak",
         "nomicfoundation",
         "nomiclabs",
-        "TIMELOCK",
-        "typechain",
         "rols",
-        "timelock"
+        "timelock",
+        "TIMELOCK",
+        "typechain"
     ]
 }
