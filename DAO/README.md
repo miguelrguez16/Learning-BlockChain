@@ -1,5 +1,16 @@
 # DAO
 
+Organización Autónoma Descentralizada para almacenar un dato en un smart contract pasando por todos los estados de propuesta, voto y ejecución.
+
+- [DAO](#dao)
+  - [STEPS](#steps)
+    - [First: Run Blockchain on localhost](#first-run-blockchain-on-localhost)
+    - [Second: Run Scripts](#second-run-scripts)
+      - [New Proposal](#new-proposal)
+      - [Time to Vote](#time-to-vote)
+      - [Check state from console](#check-state-from-console)
+      - [Queue and Execute](#queue-and-execute)
+
 <!-- ## TODO
 
 1. Write the smart contract s
@@ -27,7 +38,7 @@
 `$ npx hardhat console --network localhost`
 
 ```bash
->   const governor = await ethers.getContract("GovernorContract");
+> const governor = await ethers.getContract("GovernorContract");
 undefined
 > await governor.state("90220404988540913470101718141013050912703515079583293957642033883372164516948");
 4
@@ -36,3 +47,7 @@ undefined
 Valor de state es recogido de proposals.json
 
 4 indica que la propuesta es succeeded --> IGovernor.sol --> Enum ProposalState
+
+#### Queue and Execute
+
+`$ npx hardhat run .\scripts\queue-execute.ts --network localhost`
